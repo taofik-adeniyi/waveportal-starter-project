@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 64px;
+  background: rgb(2,0,36);
+  height: 100vh!important;
+  padding: 50px 0;
+background: linear-gradient(252deg, rgba(2,0,36,1) 0%, rgba(117,150,179,1) 35%, rgba(9,9,121,1) 66%, rgba(0,212,255,1) 100%);
 }
 
 .dataContainer {
@@ -16,19 +19,34 @@
   text-align: center;
   font-size: 32px;
   font-weight: 600;
+  color: #fff;
 }
 
 .bio {
   text-align: center;
-  color: gray;
+  color: #000;
+  /* color: #00308F; */
   margin-top: 16px;
 }
 
 .waveButton {
   cursor: pointer;
   margin-top: 16px;
-  padding: 8px;
+  padding: 15px;
   border: 0;
   border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #7CB9E8;
   
+}
+textarea {
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  background-color: #7CB9E8;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  min-height: 5rem;
 }
