@@ -22,7 +22,7 @@ export default function App() {
         const { ethereum } = window;
         
         if (!ethereum) {
-          console.log("Make sure you have metamask!");
+          alert("Make sure you have metamask!");
           return;
         } else {
           console.log("We have the ethereum object", ethereum);
@@ -53,7 +53,7 @@ export default function App() {
       const { ethereum } = window;
 
       if (!ethereum) {
-        alert("Get MetaMask!");
+        alert("Get a wallet client!");
         return;
       }
 
@@ -172,17 +172,17 @@ export default function App() {
 
       <div className="dataContainer">
         <div className="header">
-        👋 Hey Pal!!
+        👋 Hey All !!!
         </div>
 
         <div className="bio">
-        I am Taofik and a Software Developer with awesome skills in blockchain developmet! <br/> Connect your Ethereum wallet and wave at me!
+        I am Taofik a Software Developer with web3 developmet! experience <br/> Connect your Ethereum wallet (Test Net Rinkeby) and drop me your questions!
         </div>
 
         <textarea onChange={(e)=> setCustomMesage(e.target.value)} value={customMessage}></textarea>
 
         <button className="waveButton" onClick={wave}>
-          Say Hi to me with a customize message
+          Why not drop me a text on the blockchain
         </button>
 
         {/*
@@ -190,7 +190,7 @@ export default function App() {
         */}
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
-            Connect Wallet
+            Connect to rinkey test network
           </button>
         )}
 
